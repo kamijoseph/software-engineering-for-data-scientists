@@ -62,3 +62,29 @@
         memray flamegraph memray-script.py.17881.bin
 
 ## time complexity
+- time complexity describes how the running time of an algorithm grows as the size of the input increases.
+- this means an overall trend, not specific to any hardware
+- how to estimate time complexity:
+
+    ### big O notation
+    - "big O is how code slows as data grows" ned batchelder, pycon 2018
+    - is a more formal way of describing the patterns of how the runtime of your code increases as the size of your data grows
+    - in big O notation, the runtime is described as a function of the size of the input, n, and it’s written as O(f(n)). f(n) is an upper bound on the number of operations performed by the algorithm as a function of n. So the weighted mean example would be classed as O(n).
+    - common classes in big O noatation include:
+
+        1. O(1) - also known as constant time
+        - the runtime is independent of the size of the dataset
+        - example of this is looking up a particular element in a list. returning the last element in a list still takes the same amount of time even if the list is very large.
+
+        2. O(n) - also known as linear time
+        - runtime increases linearly with the size of the dataset
+
+        3. O(n^2) - also known as quadratic time
+        - runtime increases in proportion to the square of the size of the dataset
+        
+        4. O(2^n) - also known as exponential time
+        - running time increases proportional to 2 to the factor of the size of the dataset
+        
+        5. O(log n) also known as logarithmic time and O(n log n)
+        - runtime increases in proportion to the log of the size of the dataset
+- O(n^2) and O(2^n) get very slow very quickly, so for higher perfomance try to avoid them
