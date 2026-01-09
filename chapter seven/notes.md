@@ -86,3 +86,19 @@
     ### 2. integration tests
     - integration tests confirms that a larger system functions correctly.
     - they test a whole script or a larger chunk of a poject, combining the functionality of multiple units and running the together.
+
+## data validation
+- data validation is the process of confirming that the data is what is expected. the test is on the data you are working with rather than the code being written.
+- data validation may be handled by a data engineering team, it could be a step in a machine learning pipeline, or included as part of the testing process.
+
+    ### data validation examples
+    - it is good practice to test the properties of the data rather than exact values as data can change during the lifespan of a data science project
+    - common validation steps include:
+        - testing that all the columns in the dataset are present.
+        - testing that the data in each column is the correct type
+        - testing that the columns are not all null values or dont have more than a certain proportional of nulls
+        - checking that the statistical properties of the data are as expected.
+        - checking that the data distribution is similar to the data version from the previous day, week or other relevant time period.
+        - checking for nomalous data.
+
+- pandera is a lightweight module for data validation
