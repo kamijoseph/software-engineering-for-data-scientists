@@ -68,3 +68,12 @@
     - other testing frameworks options:
         1. unittest - standard python library
         2. tox - includes setting up a venv, install application, and managing dependencies & python versions.
+
+## types of tests
+- patric viafore in `Robust Python (o'reilly 2021)` identifies six types of tests commonly used in software engineering:
+    1. unit tests - check that units of code, such as functions or classes, do whatever a developer expects
+    2. integration tests - checks that a larger system is connected correctly
+    3. acceptance tests - checks that the system does what the user expects.
+    4. load tests - checks that the system still functions correctly with data and users increase
+    5. security tests - checks that the system is resistant to attacks
+    6. usability tests - checks that the system is intuitive to use.
