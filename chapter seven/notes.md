@@ -49,4 +49,22 @@
     - examples include empty strings, or data of an incorrect type
 
     ### running automated tests with pytest
-        
+    - `Pytest` is a framework that handles finding, collecting, and running tests
+    - if you use it or another test framework, you dont need to run every single test function if you have many functions or write boilerplate code to run all the tests.
+    - installation:
+
+    ```bash
+    pip install pytest
+    ```
+    
+    ```bash
+    pytest test_script.py
+    ```
+
+    - if you want to run all the tests in a folder, simply use the command pytest on its own. 
+    - pytest will recursively search all the files in the folder where you run this command, and it will run tests from files that match the pattern test_*.py or *\_test.py. Inside these files, it will run any test functions that start with test_.
+    - pytest prints a message to show that the test has failed, and it highlights the exact line that failed. 
+    - it also prints out the assertion error and shows the incorrect value that the code generated.
+    - other testing frameworks options:
+        1. unittest - standard python library
+        2. tox - includes setting up a venv, install application, and managing dependencies & python versions.
