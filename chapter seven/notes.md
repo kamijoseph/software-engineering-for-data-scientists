@@ -114,4 +114,10 @@
 ## testing for machine learning
 - machine learning code needs to be tested a little differently from most other code. 
 - this is because you don’t know exactly what model you’ll get from a given dataset, because most machine learning algorithms includerandomization in some way
-    ml pipeline testing
+
+    ### testing model training
+    - its difficult because given some input data, you dont know the expected output
+    - you don’t know exactly what the weights of the neural network should be, and you don’t know all the parameters that go into your saved model file.
+    - if the model takes a long time to train, it’s impractical to test whether the model outputs are correct or the final model accuracy. instead, you should check that training is running as you expect, and that the model trains without crashing. this can be done by writing a test for your training code that compares model weights before and after a training step, to ensure that they have changed.
+
+    ### testing model inference
