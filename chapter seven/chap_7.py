@@ -1,4 +1,5 @@
 
+import pandas as pd
 from scipy.stats import linregress
 
 # example 1
@@ -11,6 +12,12 @@ def weighted_mean(num_list, weights):
     return (running_total/sum(weights))
 
 # example 2
+def process_sdg_data(file, drop_columns):
+    df = pd.read_excel(file)
+    df = df.drop(drop_columns, axis=1)
+    df = df.set_index("GeoAreaName").transpose()
+    return df
+
 def fit_trendline(year_timestamps, data):
     result = linregress(year_timestamps, data)
     slope = round(result.slope, 3)

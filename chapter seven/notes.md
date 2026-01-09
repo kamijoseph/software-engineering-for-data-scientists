@@ -84,3 +84,5 @@
     - unit tests should be deterministic. they should always give the same result with the same inputs, so dont include anythig that has some random component to it
 
     ### 2. integration tests
+    - integration tests confirms that a larger system functions correctly.
+    - they test a whole script or a larger chunk of a poject, combining the functionality of multiple units and running the together.

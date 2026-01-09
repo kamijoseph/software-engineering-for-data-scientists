@@ -1,5 +1,4 @@
-from chap_7 import fit_trendline
-from chap_7 import weighted_mean
+from chap_7 import fit_trendline, weighted_mean
 
 # test for weighted mean function
 def test_weighted_mean():
