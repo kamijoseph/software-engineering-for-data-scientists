@@ -77,3 +77,10 @@
     4. load tests - checks that the system still functions correctly with data and users increase
     5. security tests - checks that the system is resistant to attacks
     6. usability tests - checks that the system is intuitive to use.
+
+    ### 1. unit tests
+    - a unit test takes a small component of your code and runs a test on it, for example, testing a function or a class. 
+    - you’d usually write these while developing your code or while debugging. should be quick to run, so is best to use small datasets and avoid operations that can take a long time such as connecting to a database.; its best to use fake data instead.
+    - unit tests should be deterministic. they should always give the same result with the same inputs, so dont include anythig that has some random component to it
+
+    ### 2. integration tests
