@@ -1,16 +1,7 @@
 from chap_7 import fit_trendline
 from chap_7 import weighted_mean
 
-# test for the weighted sum function
-def test_weighted_mean():
-
-    list_a = [1, 2, 4]
-    list_b = [1, 2, 4]
-
-    result = weighted_mean(list_a, list_b)
-    assert result == 3
-
-# test for an unexpected input
+# test for weighted mean function
 def test_weighted_means():
     
     result = weighted_mean([1, 2, 4], [1, 2, 4])
