@@ -121,3 +121,7 @@
     - if the model takes a long time to train, it’s impractical to test whether the model outputs are correct or the final model accuracy. instead, you should check that training is running as you expect, and that the model trains without crashing. this can be done by writing a test for your training code that compares model weights before and after a training step, to ensure that they have changed.
 
     ### testing model inference
+    - there are two main strategies for testing a model that is running inference in production. 
+    - first, you should write unit and integration tests that check that the inference code is working correctly. does it return a prediction given some fake input data? does it handle empty inputs correctly? does it handle errors gracefully? if your model is very large, you may want to run some tests on a smaller sample model, and some on the full version of the model.
+
+    - second, you can send particular data examples to your model and confirm that the model predictions are what you expect. this is different from model evaluation because you’ll use just a few data examples, rather than a whole evaluation dataset. for a regression model, you could check that the model’s output for a given data example is within the correct range. Or for a classification model you can give it some inputs that should always be a specific class. you want your model to be deployed to production only if it makes those predictions correctly.
