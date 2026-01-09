@@ -44,5 +44,7 @@
     - it’s common practice to put your tests in a separate folder and to start the names of the Python files containing your tests with test_. this keeps the tests separate from the rest of the code and allows automated test runners to find your tests.
 
     ### testing unexpected inputs
-    - 
+    - as well as the code works with the inputs expected, its useful to make the code robust by testing whether the code can handle unexpected inputs
+    - these are known as edge cases, which are extreme or unusual examples of an input that require special handling.
+    - examples include empty strings, or data of an incorrect type
         

@@ -10,6 +10,15 @@ def test_weighted_mean():
     result = weighted_mean(list_a, list_b)
     assert result == 3
 
+# test for an unexpected input
+def test_weighted_means():
+    
+    result = weighted_mean([1, 2, 4], [1, 2, 4])
+    assert result == 3
+
+    empty_list_result = weighted_mean([], [])
+    assert not empty_list_result
+
 # test for the fit trendline function
 def test_fit_trendline():
 
