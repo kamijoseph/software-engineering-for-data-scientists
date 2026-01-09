@@ -47,4 +47,6 @@
     - as well as the code works with the inputs expected, its useful to make the code robust by testing whether the code can handle unexpected inputs
     - these are known as edge cases, which are extreme or unusual examples of an input that require special handling.
     - examples include empty strings, or data of an incorrect type
+
+    ### running automated tests with pytest
         
