@@ -101,4 +101,17 @@
         - checking that the data distribution is similar to the data version from the previous day, week or other relevant time period.
         - checking for nomalous data.
 
-- pandera is a lightweight module for data validation
+- pandera is a lightweight module for data validation that useas a schema to validate pandas data frame or similar data structures.
+- installation:
+
+    ```bash
+    pip install pandera
+    ```
+
+- another option for data validation is pydantic module. it uses annotation to validate data but it is not a static analysis tool like mypy.
+- pydantic uses the concept of data schemas to validate data. First, you define a schema that describes the format of your data; then you can use thatschema to check that new data is in the correct format.
+
+## testing for machine learning
+- machine learning code needs to be tested a little differently from most other code. 
+- this is because you don’t know exactly what model you’ll get from a given dataset, because most machine learning algorithms includerandomization in some way
+    ml pipeline testing
