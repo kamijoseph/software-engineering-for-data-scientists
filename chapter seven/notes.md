@@ -39,4 +39,10 @@
         2. act: run the function you are testing
         3. assert: check that the result of running the function is what you expect.
         4. cleanup: make sure the test doesnt leave any trace behind. for example, if you have opened a file, make sure to close it.
-        - example in chap_7.py and test.py
+    
+    - example in chap_7.py and test.py
+    - it’s common practice to put your tests in a separate folder and to start the names of the Python files containing your tests with test_. this keeps the tests separate from the rest of the code and allows automated test runners to find your tests.
+
+    ### testing unexpected inputs
+    - 
+        
