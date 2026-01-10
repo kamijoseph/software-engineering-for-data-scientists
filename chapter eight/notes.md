@@ -66,3 +66,62 @@
         │
         └── test_utils.py
     ```
+
+    - breakdown:
+
+    1. documentation and dependencies requirements:
+    ```yaml
+    ├── README.md
+    ├── requirements.txt
+    ```
+    - these are documentation and dependenices requirements list which every project should have.
+
+    2. research and experimentation notebooks:
+    ```yaml
+    ├── notebooks
+        │
+        ├── explore_data.ipynb
+        │
+        └── try_regression_model.ipynb
+    ```
+    - its good practice to keep notebooks for experiments and research in which you are trying out different models in their own folders
+
+    3. source scripts:
+    ```yaml
+    ├── src
+        │
+        ├── __init__.py
+        │
+        ├── load_data.py
+        │
+        ├── feature_engineering.py
+        │
+        ├── model_training.py
+        │
+        ├── model_analysis.py
+        │
+        └── utils.py
+    ```
+    - its also good to keep scripts in their own folder. a common python convention is to put all the code for a package in a folder named src (short for "source")
+    - useful to put "helper" functions that are reused in many places in a utils.py file
+
+    4. tests:
+    ```yaml
+    ├── tests
+        │
+        ├── test_load_data.py
+        │
+        ├── test_feature_engineering.py
+        │
+        ├── test_model_training.py
+        │
+        ├── test_model_analysis.py
+        │
+        └── test_utils.py
+    ```
+    - keeping tests in a separate folder keeps things tidy and also lets the testing framework discover them easily. each file in the src folder gets its own tests
+
+- this is just one option for structuring a project. once there is a project structure that works for many projects, it can be turned into a template and replicated using `Cookiecutter`, or using `Kedro` to help you set it up.
+
+## code design
+- `design is the art of arranging code` --sandi metz
