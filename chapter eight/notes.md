@@ -9,3 +9,14 @@
 - refractoring is the process of adjusting the structure of the code while keeping its behavior the same and this is a normal part of software engineering.
 
 ## project design and structure
+- keeping the design somewhat standardized is very helpful as it reduces cognitive load of switching to a new project
+- itd also easier to pick up work that someone else on the team has done if the standard design is shared.
+
+    ### a) project design considerations
+    - these questions will help design a project:
+        1. what are the overall goals or aims of the projects. what is the overall problem needed to be solved. always have the big picture in mind to make sure all writen code is aimed at achieving that goal.
+        2. what are the overall inputs and outputs of the project? for example, a machine learning project may take raw data as an input and output model predictions.
+        3. who are the stakeholders in the project? how much do you need to do before you check in with them?
+        4. what is the timeline of the project? what are the milestones or deadlines?
+        5. what are the ideas you are going to try out? how much time can you spend on exploration and experimentation versus solving the problem needed?
+        6. what is the likelihood that the scope of this project might change? or that some point in the future, the work you do hear could be reused for a different use case?
