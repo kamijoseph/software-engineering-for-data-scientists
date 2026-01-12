@@ -39,3 +39,14 @@
         - it’s good practice to add docstrings to your tests. hould explain the purpose of the test and the expected outcome, and they can include details on edge cases or describe the bug that is being checked
 
     ### readmes, tutorials and other longer documentations
+    - longer documents should give your readers the overall context of your project and advertise the work you have done.
+    - consider including the following in project's documentation:
+        1. a short overview of your project, which could be a single paragraph. You can think of this as an “executive summary.” try to include the overall goals of the project, who should use it, and the use cases.
+        2. how to get started using the project and how to navigate it. this could take the form of a notebook tutorial.
+        3. Whether there are any project caveats or limitations. for example, if your code only works with data from 2023 or earlier, it’s useful to highlight this when someone reads the introduction to your project, rather than needing to dig into the code comments.
+        4. the next steps in the project. Even if you have finished working on a project, it’s useful to note good next steps for anyone who picks up this work in the future.
+    - every code repository should contain a README.md file that covers these points and gives an overall introduction to the project.
+    - it is essential to keep longer documents up to date.
+    - documentation is easiest to maintain if it sits in the same location as your code.
+
+- the combination of good names, useful comments, completed docstrings, and an overall introduction will ensure that your code is easy to run, maintain, and work on in the future.
