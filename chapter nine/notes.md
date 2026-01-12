@@ -16,3 +16,10 @@
     8. What are the lessons you learned from this project?
 
 ## documentation within the codebase
+- a readable codebase should contain text as well as code, in the form of comments, docstrings, and longer documents.
+- hierachy of documentation within the codebase, from shorter to longer:
+    1. names of functions, classes, and modules give information on what you should expect that piece of code to do.
+    2. comments make a small individual point that adds extra information, similar to a footnote in a book.
+    3. docstrings give a longer overview of what a function or class does, including details of any edge cases.
+    4. API documentation shows what each API endpoint expects as its input and returns for its output.
+    5. longer documents such as readmes and tutorials give an overview of how to use all the code in a project.
