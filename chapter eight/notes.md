@@ -147,6 +147,8 @@
         4. outputs
             - the outputs of the function are what you include in the return statement or can also be data saved to a file. also part of the interface.
     
-    ### interfaces and contrasts
+    ### interfaces and contracts
     - a useful place to start when writing indivindual functions is to figure out what does it accept as an input and what does it return as an output
     - once inputs and outputs been decided on, you shouldnt change them as other components of the system may be depending on them, this is also known as contract.
+    - its best to keep number of input arguments small: three or four atmost
+    - function test should confirm that the contract is maintained by checking that the correct inputs are accepeted and the correct outputs are returned.
