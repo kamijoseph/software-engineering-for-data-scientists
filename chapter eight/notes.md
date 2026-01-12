@@ -152,3 +152,8 @@
     - once inputs and outputs been decided on, you shouldnt change them as other components of the system may be depending on them, this is also known as contract.
     - its best to keep number of input arguments small: three or four atmost
     - function test should confirm that the contract is maintained by checking that the correct inputs are accepeted and the correct outputs are returned.
+
+    ### coupling
+    - when dividing code into pieces, its important to make sure that those pieces are as independent from each other as possible.
+    - if changing one part of the code changes another, the complexity of the whole project increaces and becomes harder to work on.
+    - term coupling describes dependence between functions or modules.
