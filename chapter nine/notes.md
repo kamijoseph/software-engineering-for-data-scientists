@@ -50,3 +50,14 @@
     - documentation is easiest to maintain if it sits in the same location as your code.
 
 - the combination of good names, useful comments, completed docstrings, and an overall introduction will ensure that your code is easy to run, maintain, and work on in the future.
+
+## documenting machine learning experiments
+- in machine learning projects, you’ll try out many different models, datasets, and hyperparameters in search of the model that makes the best predictions according to the evaluation metrics you choose. The number of hyperparameters in particular can grow very large, so it’s important to document what combinations you have tried.
+- this will help if you come back to your work in the future, and it will also help anyone else who works on the project.
+- the experiments need to be documented in a structured manner, to ensure you are being rigorous. you’ll need to ensure you track all the variables that change in each iteration of your experiment.
+- consider recording the following:
+    - the data you used to train the model
+    - the training/evaluation/test split
+    - the feature engineering choices you made
+    - the model hyperparameters (such as the regularization in a logistic regression model or the learning rate for a neural network)
+    - the metrics you are evaluating your model on, such as accuracy, precision, and recall
