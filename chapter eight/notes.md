@@ -157,3 +157,12 @@
     - when dividing code into pieces, its important to make sure that those pieces are as independent from each other as possible.
     - if changing one part of the code changes another, the complexity of the whole project increaces and becomes harder to work on.
     - term coupling describes dependence between functions or modules.
+
+## from notebooks to scalable scripts
+- if notebooks are a standard part of the project workflow, you may reach a point where you need to move away from them to python scripts that are needed to run repeatedly.
+
+    ### why use scripts instead of notebooks
+    - one disadvantage of using notebooks; because you can execute code in a different order from the order it is written in, and you dont need to run all the code in a notebook at once, the notebook doesnt always reflect the code you've actuallty run. this can make it diffucult to reproduce the steps taken.
+    - notebook also dont work well with a number of standard software engineering tools mentioned in this book. its not as easy to lint, format, or type check notebooks as it is with a python script
+    - version control doesnt capture what cells have been run in a notebook. you may need to use external tools to easily review the changes that has been made in a notebook.
+    - a common point to switch from notebooks to scripts is when you move the code into a production environment where it will be run repeatedly and some companies may require this due to potential security risks from notebooks
