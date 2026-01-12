@@ -168,3 +168,7 @@
     - a common point to switch from notebooks to scripts is when you move the code into a production environment where it will be run repeatedly and some companies may require this due to potential security risks from notebooks.
 
     ### creating scripts from notebooks
+    - its a good idea to make sure that the notebook runs correctly before creating a script from it. starting with a well-structured notebook makes it easier to turn it into a script.
+    - then, consider whether the notebook should be one python script or several. you can also use separate files for utility functions such as data cleaning functions used in many steps of the project.
+
+## refractoring
