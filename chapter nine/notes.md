@@ -23,3 +23,19 @@
     3. docstrings give a longer overview of what a function or class does, including details of any edge cases.
     4. API documentation shows what each API endpoint expects as its input and returns for its output.
     5. longer documents such as readmes and tutorials give an overview of how to use all the code in a project.
+
+    ### comments
+        - should not repeat the information that is already in the code.
+        - you will also need to change the comment if the code changes.
+        - should be easy for your reader to understand.
+        - should always be professional, without offensive slang or curse words.
+        - also can be used to add other informative points, for example links, a todo for future reference, temporary code indicator etc
+    
+    ### docsrings
+        - formal longer version of comments that are commonly included at the start of a function or class definition, or at the top of the file.
+        - give your reader an overall view of what the function or script should be doing
+        - should describe the expected inputs and outputs of that function
+        - there are 3 main templates for docstrings: google, NumPy, reStructuredText docstrings
+        - it’s good practice to add docstrings to your tests. hould explain the purpose of the test and the expected outcome, and they can include details on edge cases or describe the bug that is being checked
+
+    ### readmes, tutorials and other longer documentations
