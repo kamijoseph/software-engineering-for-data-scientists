@@ -125,3 +125,28 @@
 
 ## code design
 - `design is the art of arranging code` --sandi metz
+
+    ### modular code
+    - dividing the code base into indivindual classes and function is a critical step. its good to think what functions and classes are appropriate from the begining.
+    - modular code means that your code is broken into small independent parts. it is much easier to work with modular code.
+    - make sure each one class or function have a desifned purpose.. should be something that can be describable by a sentence for example "this functions cleans data and this other one creates a data visualizatioon"
+    - try avoid coupling in the functions - which is when you change code in one location, then need to change something in another location.
+    - consider these questions to think through what functions and classes are appropriate for the problem being solved:
+        1. what common patterns are visible in the written code? this could be a data transformation or a piece of business logic.
+        2. what components could be reused in many places? an example couuld be the transformation of some data from one timezone to another
+        3. what is the purpose of the function you are writing? as far as posibble, each function or method should do only one thing.
+
+    ### a code design framework
+    - one framework you can think about to construct your function, class, or method is the following (adapted from “Six steps to more professional data science code” on Kaggle by Rachel Tatman):
+        1. function name
+            - well named, as it sets the intention for what you want the function to do.
+        2. inputs
+            - function's interface should stay consistent, so before writing the body of the function decide what the inputs should be
+        3. behaviour
+            - the body of the function or method contains the actual operations that it carries out, what you want the function to do.
+        4. outputs
+            - the outputs of the function are what you include in the return statement or can also be data saved to a file. also part of the interface.
+    
+    ### interfaces and contrasts
+    - a useful place to start when writing indivindual functions is to figure out what does it accept as an input and what does it return as an output
+    - once inputs and outputs been decided on, you shouldnt change them as other components of the system may be depending on them, this is also known as contract.
