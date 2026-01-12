@@ -172,3 +172,12 @@
     - then, consider whether the notebook should be one python script or several. you can also use separate files for utility functions such as data cleaning functions used in many steps of the project.
 
 ## refractoring
+- refractoring is the process of changing a software system in a way that does not alter the external behvaior of the code, yet improves its internal strucutre.
+- refractor only if necessary, else dont if code is working correctly and satisfying all the requirements.
+
+    ### strategies for refractoring
+    - ideally, before you refractor the code, you'll already have a full set of tests for it. this tests will check the functionality of the code remains the same when the code is changed: you don’t want to introduce bugs when you refactor your code.
+    - it’s a good idea to make incremental changes to your code. Don’t rewrite everything at once and don’t throw away parts of your code that work fine.
+    - the overall strategy is simple: make a small change, run a test, then save your code (usually to version control).
+    - version control is extremely helpful here, because it makes it easy to revert to a previous version of your code if your change causes your tests to fail.
+    - when you’re refactoring, keep the interface of your function the same and change its internals.
