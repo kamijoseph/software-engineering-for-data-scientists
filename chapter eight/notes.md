@@ -165,4 +165,6 @@
     - one disadvantage of using notebooks; because you can execute code in a different order from the order it is written in, and you dont need to run all the code in a notebook at once, the notebook doesnt always reflect the code you've actuallty run. this can make it diffucult to reproduce the steps taken.
     - notebook also dont work well with a number of standard software engineering tools mentioned in this book. its not as easy to lint, format, or type check notebooks as it is with a python script
     - version control doesnt capture what cells have been run in a notebook. you may need to use external tools to easily review the changes that has been made in a notebook.
-    - a common point to switch from notebooks to scripts is when you move the code into a production environment where it will be run repeatedly and some companies may require this due to potential security risks from notebooks
+    - a common point to switch from notebooks to scripts is when you move the code into a production environment where it will be run repeatedly and some companies may require this due to potential security risks from notebooks.
+
+    ### creating scripts from notebooks
