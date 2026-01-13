@@ -67,3 +67,22 @@
     - a pull request should include comments to describe what you are changing, and why those changes should be made. This will help the reviewer know where to focus the discussion.
 
 ## python packaging
+- if you want to make your code easy for other people to use, you can turn it into a package. this means that people can install it in their own Python environment, then import it into any project they are working on, in the same way you use NumPy or pandas.
+- one of the biggest strengths of Python is its huge ecosystem of packages, and PyPI (the Python Package Index) enables this. PyPI hosts an enormous number of packages so that they’re available for you to download.
+- a package ensures that your code is completely reproducible.
+
+    ### packaging basics
+    - before you start building your package, ensure that your code meets the following criteria so that users of your package get a good experience:
+        1. meets the designed planned
+        2. fully functional
+        3. neatly formatted
+        4. throroughly tested
+        5. well documented.
+        6. exists in a single folder
+    
+    - from pypi packaging involves the following steps:
+        1. prepare a configuration file that contains metadata about the project and isntructions for a package building tool. the standard is poetry pyproject.toml file.
+        2. use a tool that reads the source code and configuration file to turn it into a package file (or build artifact). this is what makes it installable on another person's system.
+        3. upload the build artifact to pypi or some other distribution service.
+
+    ### building and uploading packages
