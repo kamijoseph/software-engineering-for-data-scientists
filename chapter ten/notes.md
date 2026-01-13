@@ -86,3 +86,40 @@
         3. upload the build artifact to pypi or some other distribution service.
 
     ### building and uploading packages
+    - once you have the pyproject.toml file, you are ready to build the package. you will need a build tool to build the package.
+    - setuptools is a popular way of uilding python packages, but if you are doing complex things with packaging consider other tools such as poetry, pdm and hatch.
+    - by default, most build tools will produce two files: a `sdist` file and a `wheel` file. the `sdist` file is a zipped file containing the source code for yourpackage. the wheel file is also a type of zipped archive file, but it can be installed in a Python environment using pip.
+    - you’ll need to define the build tool you want to use in your pyproject.toml file.
+    - you can use the Build library to build your package, and it will use setuptools or another packaging tool you’ve specified.
+
+    ```bash
+    pip install build
+    ```
+
+    - run this in the directory where your pyproject.toml file is located:
+
+    ```bash
+    python3 -m build
+    ```
+    - you can share the wheel file an other people can install it in their environments using pip
+    - to publish to pypi you will need `twine`. it manages the process of uploading the package to pypi.
+
+    ```bash
+    pip install twine
+    ```
+
+    - to upload to PyPI, you’ll need to register for an account and get an API key. once you have those, you can use Twine to upload your package:
+
+    ```bash
+    twine upload dist/*
+    ```
+
+    - if you are using poetry, you dont need any extra packages, just run:
+    
+    ```bash
+    poetry build
+    ```
+
+    ```bash
+    poetry publish
+    ```
