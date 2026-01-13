@@ -66,4 +66,4 @@
     - if you would like someone else to review the code before merging to branch, you can use the pull request. you can use the pull request interface on github.
     - a pull request should include comments to describe what you are changing, and why those changes should be made. This will help the reviewer know where to focus the discussion.
 
-## dependencies and virtual environments
+## python packaging
