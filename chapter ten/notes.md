@@ -17,3 +17,53 @@
     - the underlying data stored by Git is a snapshot of the state of all the files and the folder structure of the directory you are tracking.
     - you have a history of all the changes that you (or someone else) have made to that code.
     - a local repository stores the state of your project code on your computer, but you can also have a remote repository. this is a copy of your project code on a central server such as GitHub.
+    - each commit should be about only one thing, for example, fixing a problem or adding one small feature.
+
+    ### branches and pull requests
+    - branches in Git let you isolate the changes you are making and try out new features without affecting the primary version of the code while still tracking the changes you have made.
+    - useful when many people are working on the same codebase, because you can work on the same code without overlap.
+    - making a branch doesn’t create a copy of the files containing your code. instead, Git tracks a set of changes introduced from a particular point in the project’s timeline. This means that you can easily work on different features and then merge the changes back into the original code.
+    - all repositories have a default branch, usually named `main`.
+    - to create a new branch:
+
+    ```bash
+    git branch new_branch
+    ```
+
+    - change where you are working to this branch:
+
+    ```bash
+    git checkout new_branch
+    ```
+
+    - you can combine the two commands;
+    
+    ```bash
+    git checkout -b new_branch
+    ```
+
+    - after you have checked out the branch, any changes you make to the code on your computer will take place on your new_branch development branch, not the main branch.
+
+    - saving a new branch to remote repo, run:
+    
+    ```bash
+    git push origin new_branch
+    ```
+
+    - before merging, make sure to switch to the main branch:
+
+    ```bash
+    git checkout main
+    ```
+    - then merge:
+    
+    ```bash
+    git merge new_branch
+    ```
+
+    - after merging you should delete that branch. the commit history will be preserved.
+    - there may be merge conflicts when merging a branch. this arise when you have changed a line of code in new branch that has also been changed in the main branch. you will need to decide which version of this line to keep.
+    - if you would like someone else to review the code before merging to branch, you can use the pull request. you can use the pull request interface on github.
+    - a pull request should include comments to describe what you are changing, and why those changes should be made. This will help the reviewer know where to focus the discussion.
+
+## dependencies and virtual environments
