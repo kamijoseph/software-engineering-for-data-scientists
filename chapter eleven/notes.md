@@ -26,3 +26,13 @@
     - two other concepts: headers are metadata that are attached to an HTTP request to a server or a response from a server. common request headers include authorization credentials, and common response headers include the type of data that the server is returning.
     - URL parameters are key-value pairs at the end of a URL that specify what you would like the URL to return
     - example in code
+
+## creating your own API using `FastAPI`
+- `FastAPI` is a framework for writing API endpoints released in 2018 and has seen rapid widespread adoption because it is easy to use and works well with other modern python tools.
+- it also has other useful features including automatic documentation, and i conforms with OpenAPI specifications, a widely used set of standards for API.
+- other API frameworks:
+    1. `flask` - older than `FastAPI`, quite similar but a little more complex to use.
+    2. `django` - popular framework used by webdevs. contains alot of functionality for developing websites, although kinda an overkill for datascientists.
+
+    ### setting up the AP-
+    - check code at API.py
