@@ -11,3 +11,7 @@ def say_hi():
     return {
         "Hi": "There"
     }
+
+@app.get("/say_hello/{name}")
+def say_hello(name: str):
+    return {"hello": name}
