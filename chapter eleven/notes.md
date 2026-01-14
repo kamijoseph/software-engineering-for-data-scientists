@@ -35,6 +35,10 @@
     2. `django` - popular framework used by webdevs. contains alot of functionality for developing websites, although kinda an overkill for datascientists.
 
     ### setting up the AP-
-    - check code at API.py
+    - check code at API_code.py
 
     ### adding functionality in an API
+    - check code at API_code.py
+
+    ### making requests to the API
+    - check code at API_code.py
