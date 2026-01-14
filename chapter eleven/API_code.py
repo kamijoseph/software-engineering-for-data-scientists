@@ -1,17 +1,18 @@
 
 # chapter 11: APIs
 from fastapi import FastAPI
+from trendline import country_trendline, TrendlineInput
 
 # intialise app
 app = FastAPI()
 
-# simple get endpoint
-@app.get("/say_hi/")
-def say_hi():
+# adding a get endpoint
+@app.get("country_trendline/{country}")
+def calculate_country_trendline(country: str):
+    slope, r_squared = country_trendline(country)
     return {
-        "Hi": "There"
+        "slope": slope,
+        "r_squared": r_squared
     }
 
-@app.get("/say_hello/{name}")
-def say_hello(name: str):
-    return {"hello": name}
+# adding a post endpoint
