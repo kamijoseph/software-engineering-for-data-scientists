@@ -20,3 +20,28 @@
 
     ### continuous deployment
     - if al tests pass, the code automatically deploys to a production environment
+
+- CI/CD systems require that your code is in version control, you have a good set of tests, and your whole team is on board with automating the system.
+- in ML CI/CD can be triggered by changes to a model’s training data or by a decline in the model’s performance.
+- the system retrains and redeploys the model when the selected trigger occurs.
+
+## automation examples
+- this section is aout automating some common tasks in  the coding workflow, such as using pre-commit hooks and lack, automatically removing data from jupyter notebooks before they reach the github repository
+- also how to run tests automatically using github actions.
+
+    ### pre-commit hooks
+    - they are a type of Git hook, which is a custom script that runs before or after some Git action (such as a commit).
+    - pre-commit hooks are useful because they let you identify problems before committing to version control.
+    - particularly good for tasks that are easy to automate, such as linting and formatting. Using hooks for linting will detect poor practices and prevent poorly written code from being committed to the codebase.
+    - you can also use pre-commit hooks to run unit tests, and this can be good for small projects.
+    - pre-commit is a multilanguage framework that uses a `.yaml` file to manage configurations. `YAML (YAML Ain’t Markup Language)` is a human-readable markup style language often used for configuration files.
+
+    ### github actions
+    - gitHub Actions is one of the easiest CI/CD platforms to get started with, and you can use it to automate many tasks in your coding workflow. it runs any code that you specify whenever a GitHub event occurs, such as a push to a remote repository or a pull request.
+    - to get started, you’ll need to already be tracking changes using Git, and you’ll need to have a remote repository hosted on GitHub
+    - create a .github/ folder with a workflows/ folder within it. as with pre-commit hooks, GitHub Actions configurations are stored in a .yaml file. Create this in the workflows/ folder.
+    - in this YAML file, you’ll specify the name of your workflow, the trigger for your workflow, and what you want to happen as a result of that trigger.
+    - it’s important to note that whatever you run in the jobs section will run on GitHub’s servers, not your own computer.
+    - next, you need to say what you want to happen in the steps section. since this job will run on GitHub’s servers, the first thing you need to do is copy your code to this server.
+    - you need Python on your server, and there’s a prebuilt action for choosing a server that already has a Python installation.
+    - the next step is to install the dependencies for your project. you can use a requirements.txt file
