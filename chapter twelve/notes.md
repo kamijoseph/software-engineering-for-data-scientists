@@ -47,4 +47,7 @@
     - the next step is to install the dependencies for your project. you can use a requirements.txt file
 
 ## cloud deployments
-- ideally, you want your API to start up without needing any manual commands and automatically restart after a problem. To do this, you can use a Docker container,
+- ideally, you want your API to start up without needing any manual commands and automatically restart after a problem. To do this, you can use a Docker container.
+- you’ll also need some kind of a host computer where you can run the code for your API.
+- cloud providers such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud have become increasingly popular in recent years as places to host and run code, instead of on traditional servers.
+- they provide on-demand computing resources that can scale up or down depending on how much they are being used.
