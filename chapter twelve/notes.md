@@ -45,3 +45,6 @@
     - next, you need to say what you want to happen in the steps section. since this job will run on GitHub’s servers, the first thing you need to do is copy your code to this server.
     - you need Python on your server, and there’s a prebuilt action for choosing a server that already has a Python installation.
     - the next step is to install the dependencies for your project. you can use a requirements.txt file
+
+## cloud deployments
+- ideally, you want your API to start up without needing any manual commands and automatically restart after a problem. To do this, you can use a Docker container,
