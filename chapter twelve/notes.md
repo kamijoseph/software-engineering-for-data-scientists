@@ -62,3 +62,5 @@
     - `Docker` - is a system for building and managing containers.
     - a `Docker` container is based on an image, and this provides instructions for building a container.
     - you can define a Docker image in a text file called a `Dockerfile`, and this file contains commands to install and set up everything you need in your container. You can then run an instance of a container locally or deploy it elsewhere.
+
+    ### building a docker container
