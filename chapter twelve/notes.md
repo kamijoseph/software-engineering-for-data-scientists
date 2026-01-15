@@ -51,3 +51,11 @@
 - you’ll also need some kind of a host computer where you can run the code for your API.
 - cloud providers such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud have become increasingly popular in recent years as places to host and run code, instead of on traditional servers.
 - they provide on-demand computing resources that can scale up or down depending on how much they are being used.
+
+    ### main steps to deployment for most cloud providers:
+    1. create a docker container on the local machine that contains the API code and details of the libraries the code depends on.
+    2. upload this container to a container registry on the chosen cloud profiler's system. the container registry can contan many containers.
+    3. instruct the cloud provider to run the chosen container. this exposes the API code in the container to the internet so that users can access it. the container (and therefore the code) runs on the provider's server.
+
+    ### containers and docker
+    - 
