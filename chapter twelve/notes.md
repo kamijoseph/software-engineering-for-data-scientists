@@ -58,4 +58,7 @@
     3. instruct the cloud provider to run the chosen container. this exposes the API code in the container to the internet so that users can access it. the container (and therefore the code) runs on the provider's server.
 
     ### containers and docker
-    - 
+    - a container is an isolated place to run the API or any other applications, and this means that the environment is reproducible (including libraries that the code depends on)
+    - `Docker` - is a system for building and managing containers.
+    - a `Docker` container is based on an image, and this provides instructions for building a container.
+    - you can define a Docker image in a text file called a `Dockerfile`, and this file contains commands to install and set up everything you need in your container. You can then run an instance of a container locally or deploy it elsewhere.
