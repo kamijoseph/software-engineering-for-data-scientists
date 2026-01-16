@@ -33,3 +33,13 @@
     - if your API gives access to a database, you need to be aware of SQL injection attacks andmake sure that you validate the inputs to your API.
 
 ## security practices
+- there are a lot of ways that data can leak and your code’s security can be compromised.
+- it’s impossible to completely eliminate threats because the code you’re working on is always changing and the code you depend on is also always changing.
+- security practices aim to mitigate the threats and need to be updated often to keep up with new threats.
+
+    ### security reviews and policies
+    - if you are writing production code, you may be asked to take part in a threat modeling exercise or other security review. This is often carried out by a company’s security team, and it makes sure that security is considered early in the process of developing software.
+    - the review’s aim is to consider potential threats to a system, what risks exist and how severe they are, and whether any actions need to be taken to address them.
+    - the review process also ensures that a company’s security policy is applied, and it’s a chance for a development team to gather opinions from experts outside the team.
+
+    ### secure coding tools
