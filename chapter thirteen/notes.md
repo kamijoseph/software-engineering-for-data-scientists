@@ -24,3 +24,7 @@
     - an attacker could plant any code in a pickle file and you wouldn’t know what it was until you unpickled. this could include Python code to delete files, for example.
 
     ### version control risks
+    - committing to version control can pose a security risk. if you’re not careful, it’s possible to expose API keys and other credentials in public repositories.
+    - committing data to a remote repository can also be a security risk. if your repository is public then anyone can see the data. and even if your repository is private, your company may not want data to be shared with GitHub.
+
+    ### API security risks
