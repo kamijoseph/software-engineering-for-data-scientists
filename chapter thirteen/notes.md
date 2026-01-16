@@ -50,3 +50,13 @@
     ### simple code scanners
     - you can use the CI/CD or bandit which is an open source cli code scanner for python that identifies vulnerabilities in the written code
     - bandit will scan all the lines of Python code in the files in the folder, and if you use the -r flag it will recursively scan the code in the subfolders as well. It will check your code against the rules in its database and alert you to any vulnerabilities it knows about.
+
+## security for machine learning
+- this is especially important if you are working with models that are trained on sensitive personal data.
+
+    ### attacks on machine learning systems
+    1. input manipulation attack - this is an attack on a model that has been trained, has been deployed, and is running inference. the attacker adds some information to an input to the model in an attempt to get the model to make an incorrect prediction, often to misclassify the input.
+    2. training data extraction - an attacker crafts inputs to the model to get the model to reveal its training data, and this is particularly problematic if the model has been trained on sensitive data.
+    3. model theft - an attacker attempts to send enough queries to a deployed model and records enough responses that they are able to recreate the model.
+    4. data poisoning or adversarial training data attack - happens at the time of training a model. an attacker interferes with training data to affect model predictions when it is deployed. Contaminated data could be introduced into commonly used datasets such as ImageNet or into a company’s data.
+    5. transfer learning attacks are also a threat during model traing - many deep learning models are not trained from scratch but are fine-tuned from open source base models. An attacker could create a manipulated base model that would affect the final model. you need to ensure that base models come from a reputable source.
