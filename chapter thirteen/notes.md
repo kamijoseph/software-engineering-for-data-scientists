@@ -43,3 +43,8 @@
     - the review process also ensures that a company’s security policy is applied, and it’s a chance for a development team to gather opinions from experts outside the team.
 
     ### secure coding tools
+    - static code analysis or code scanning is an important technique for secure coding. this is where your code is checked against a list of rules but without actually running the code. static analysis encompasses linting and formatting but also includes checking for security issues.
+    - tools for static analysis include SonarQube, Checkmarx, and many other commercial tools
+    - code scanning tools are often included in a CI/CD workflow (see “deploying Code” for more details). They can be configured so that they allow code to be deployed only if it passes the security checks. Some code scanners also carry out linting and will check for patterns suggesting poor coding practices such as duplication.
+
+    ### cimple code scanning
