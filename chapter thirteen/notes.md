@@ -20,3 +20,7 @@
     - library developers of active projects will work to fix them, then release a new version that does not have this vulnerability. it’s good practice to update all the packages your code depends on.
 
     ### the python pickle module
+    - the pickle module allows you to save any form of data that you like. you may see it presented in ML examples as an easy way to save a model for later use. Unfortunately, the pickle module is not secure.
+    - an attacker could plant any code in a pickle file and you wouldn’t know what it was until you unpickled. this could include Python code to delete files, for example.
+
+    ### version control risks
