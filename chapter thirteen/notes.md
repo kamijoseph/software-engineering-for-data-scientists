@@ -28,3 +28,8 @@
     - committing data to a remote repository can also be a security risk. if your repository is public then anyone can see the data. and even if your repository is private, your company may not want data to be shared with GitHub.
 
     ### API security risks
+    - if your API makes sensitive data available or you want to control who can use it, you should be aware of API security practices.
+    - if the API is deployed on a cloud platform, anyone who has the URL can access the data from that API, so don’t use this for proprietary or sensitive data.
+    - if your API gives access to a database, you need to be aware of SQL injection attacks andmake sure that you validate the inputs to your API.
+
+## security practices
