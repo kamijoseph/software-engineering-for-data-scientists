@@ -47,4 +47,6 @@
     - tools for static analysis include SonarQube, Checkmarx, and many other commercial tools
     - code scanning tools are often included in a CI/CD workflow (see “deploying Code” for more details). They can be configured so that they allow code to be deployed only if it passes the security checks. Some code scanners also carry out linting and will check for patterns suggesting poor coding practices such as duplication.
 
-    ### cimple code scanning
+    ### simple code scanning
+    - you can use the CI/CD or bandit which is an open source cli code scanner for python that identifies vulnerabilities in the written code
+    - bandit will scan all the lines of Python code in the files in the folder, and if you use the -r flag it will recursively scan the code in the subfolders as well. It will check your code against the rules in its database and alert you to any vulnerabilities it knows about.
