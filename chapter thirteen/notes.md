@@ -60,3 +60,9 @@
     3. model theft - an attacker attempts to send enough queries to a deployed model and records enough responses that they are able to recreate the model.
     4. data poisoning or adversarial training data attack - happens at the time of training a model. an attacker interferes with training data to affect model predictions when it is deployed. Contaminated data could be introduced into commonly used datasets such as ImageNet or into a company’s data.
     5. transfer learning attacks are also a threat during model traing - many deep learning models are not trained from scratch but are fine-tuned from open source base models. An attacker could create a manipulated base model that would affect the final model. you need to ensure that base models come from a reputable source.
+
+    ### security practices for ML systems
+    - it’s important to ensure that the training data you receive is what you expect. this process is known as data validation, and you should check that the training data is in the correct format and has the statistical properties you expect. ideally, this should be an automated process that is part of your model training pipeline.
+    - also consider adversarial examples when training a model and include them in the test set. this way, you can check your model’s response to unexpected inputs before you deploy it.
+    - model monitoring helps you identify attacks on a deployed model. you can set up automated alerts to tell you when your model does something unexpected. also validate the input to a model that is running inference so that it does not return a response if the input is outside the set of data it expects.
+    - ability to rapidly deploy new versions of ML models will help you respond to any security issues that arise. Automating the retraining and deployment process will help you a lot here.
