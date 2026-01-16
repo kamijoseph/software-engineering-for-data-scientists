@@ -16,3 +16,7 @@
     -this can be done via an attack on physical security, for example, stealing company hardware, or via social engineering, for example, phishing emails.
 
     ### third party packages
+    - the libraries that your code depends on may pose a security risk. When vulnerabilities are discovered, they are published in the MITRE online database of vulnerabilities. You can look up vulnerabilities in Python or vulnerabilities in older versions of NumPy.
+    - library developers of active projects will work to fix them, then release a new version that does not have this vulnerability. it’s good practice to update all the packages your code depends on.
+
+    ### the python pickle module
